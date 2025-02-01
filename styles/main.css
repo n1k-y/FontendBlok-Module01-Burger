@@ -27,10 +27,14 @@ a {
 /* Header */
 
 .header {
+    border-bottom: 1px solid #dedede;
+}
+
+.header-wrapper {
     display: flex;
     align-items: center;
     gap: 196px;
-    padding: 26px 0;
+    padding: 27px 0;
 }
 
 .logo {
@@ -45,7 +49,7 @@ a {
 .nav {
     flex-grow: 1;
     display: flex;
-    gap: 46px;
+    gap: 47px;
 }
 
 .nav-link {
@@ -75,6 +79,7 @@ a {
     color: var(--dark);
     font-weight: 700;
     font-size: 15px;
+    padding-right: 2px;
 }
 
 .cart::before {
@@ -149,6 +154,8 @@ a {
     font-size: 79px;
     font-weight: 700;
     text-transform: capitalize;
+    margin-top: 19px;
+    margin-bottom: 18px;
 }
 
 .hero-discription {
@@ -157,4 +164,70 @@ a {
     color: rgba(var(--light-rbg), .8);
     font-size: 15px;
     line-height: 160%;
+}
+
+/* Banner */
+
+.banner {
+    margin-top: 140px;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    text-align: left;
+}
+
+.banner-wrapper {
+    padding: 99px 101px;
+}
+
+.banner-title {
+    color: var(--light);
+    font-family: var(--nunito-sans);
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 127%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.banner-title span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--open-sans);
+    color: var(--light);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    background-color: var(--accent-dark);
+    width: 95px;
+    height: 28px;
+    border-radius: 14px;
+    margin-bottom: 3px;
+}
+
+.banner-description {
+    font-family: var(--open-sans);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: rgba(var(--light-rbg), 0.8);
+    margin-top: 11px;
+}
+
+.banner-btn {
+    border-radius: 5px;
+    border: none;
+    background-color: var(--accent-light);
+    width: 170px;
+    height: 58px;
+    font-family: var(--nunito-sans);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark);
 }
