@@ -24,6 +24,7 @@ a {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 15px;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -35,7 +36,7 @@ a {
 .header-wrapper {
     display: flex;
     align-items: center;
-    gap: 196px;
+    gap: 47px;
     padding: 27px 0;
 }
 
@@ -52,6 +53,7 @@ a {
     flex-grow: 1;
     display: flex;
     gap: 47px;
+    margin-left: min(12vw, 149px);
 }
 
 .nav-link {
@@ -352,6 +354,7 @@ a {
     padding: 10px 36px 10px 58px;
     position: relative;
     transition: var(--tr);
+    cursor: pointer;
 }
 
 .menu-btn::before {
@@ -608,4 +611,38 @@ a {
 
 .button-up.visible {
     opacity: 1;
+}
+
+/* Media */
+
+@media (max-width: 1080px) {
+    .header-wrapper {
+        gap: 48px;
+    }
+    .nav {
+        gap: min(3vw, 30px);
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        gap: 45px;
+    }
+    .nav {
+        gap: 22px;
+    }
+    .logo {
+        width: 150px;
+        height: 47.81px;
+    }
+    .banner {
+        margin-top: 72px;
+    }
+    .banner-wrapper {
+        padding: 99px  40px;
+    }
+    .menu {
+        margin: 80px 0 0 0;
+    }
 }
