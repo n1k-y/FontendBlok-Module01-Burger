@@ -24,7 +24,6 @@ a {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 15px;
-    box-sizing: border-box;
 }
 
 /* Header */
@@ -37,7 +36,7 @@ a {
     display: flex;
     align-items: center;
     gap: 47px;
-    padding: 27px 0;
+    padding: 26px 0;
 }
 
 .logo {
@@ -183,6 +182,7 @@ a {
     background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto 100%;
 }
 
 .banner-title {
@@ -276,6 +276,7 @@ a {
     height: 430px;
     position: relative;
     overflow: hidden;
+    margin: 0 0 20px 0;
 }
 
 .menu-thumb img {
@@ -325,7 +326,7 @@ a {
     line-height: 127%;
     text-align: center;
     margin: 0;
-    padding: 20px 0 0 0;
+    /* padding: 20px 0 0 0; */
 }
 
 .menu-price {
@@ -375,7 +376,7 @@ a {
 /* Дополнительно */
 
 .menu-add {
-    margin: 83px 0;
+    margin-top: 83px;
 }
 
 .menuadd-header {
@@ -398,7 +399,7 @@ a {
     justify-content: space-between;
     font-family: var(--nunito-sans);
     color: rgba(var(--light-rbg), .9);
-    padding: 115px 0;
+    padding: 115px 0 100px 0;
     gap: 15px;
 }
 
@@ -625,6 +626,12 @@ a {
 
 /* Media */
 
+@media (max-width: 1280px) {
+    .container {
+        box-sizing: border-box;
+    }
+}
+
 @media (max-width: 1080px) {
     .header-wrapper {
         gap: 48px;
@@ -638,9 +645,10 @@ a {
 @media (max-width: 768px) {
     .header-wrapper {
         gap: 45px;
+        padding: 30px 0;
     }
     .nav {
-        gap: 22px;
+        gap: 23px;
     }
     .logo {
         width: 150px;
@@ -650,10 +658,14 @@ a {
         margin-top: 72px;
     }
     .banner-wrapper {
-        padding: 99px  40px;
+        padding: 100px  40px;
+        background-position: 18%;
     }
     .menu {
-        margin: 80px 0 0 0;
+        margin-top: 84px;
+    }
+    .menu-add {
+        margin-top: 72px;
     }
     .menu-box {
         grid-template-columns: repeat(2, 1fr);
@@ -668,11 +680,15 @@ a {
         gap: 20px;
     }
     .menu-item.add .menu-thumb {
-        flex-basis: calc(60% - 20px);
+        flex-basis: calc(68% - 20px);
         height: 260px;
+        margin: 0;
     }
     .menu-item.add .menu-info {
         flex-basis: 40%;
+    }
+    .footer {
+        margin-top: 140px;
     }
     .footer-item:last-child {
         display: none;
@@ -685,6 +701,6 @@ a {
         padding-bottom: 15px;
     }
     .footer-wrapper {
-        padding: 62px 0 71px 0;
+        padding: 59px 0 71px 0;
     }
 }
