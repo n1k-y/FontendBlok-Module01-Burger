@@ -489,7 +489,7 @@ a {
 }
 
 .footer-item:last-child {
-    flex-basis: 194px;
+    flex-basis: 196px;
 }
 
 /* Contacts */
@@ -656,6 +656,9 @@ a {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding: 142px 0 142px 10px;
+    }
     .header-wrapper {
         gap: 45px;
         padding: 30px 0;
@@ -729,6 +732,7 @@ a {
         padding: 59px 0 71px 0;
     }
 }
+
     @media (max-width: 730px) {
     .nav {
         display: none;
