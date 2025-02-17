@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -14,6 +15,7 @@
     <header class="header" id="headerTop">
         <div class="container">
             <div class="header-wrapper">
+                <button class="button-burger" onclick="openModal()"></button>
                 <div class="logo"></div>
                 <nav class="nav">
                     <a href="#" class="nav-link">Главная</a>
@@ -200,6 +202,13 @@
         </div>
     </footer>
     <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+    <div class="modal" id="modal" >
+        <a href="#" class="nav-link">Главная</a>
+        <a href="#" class="nav-link">Меню</a>
+        <a href="#" class="nav-link">О нас</a>
+        <a href="contact.html" class="nav-link">Контакты</a>
+        <button class="modal-close" onclick="closeModal()"></button>
+    </div>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
