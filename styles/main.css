@@ -662,7 +662,6 @@ a {
     .header-wrapper {
         gap: 45px;
         padding: 30px 0;
-        background-image: url(/images/banner-mobile.webp);
     }
     .nav {
         gap: 23px;
@@ -905,5 +904,8 @@ a {
     .menu-item.add .menu-thumb {
         flex-basis: calc(100% - 130px - 20px);
         height: 40vw;
+    }
+    .banner-wrapper {
+        background-image: url(/images/banner-mobile.webp);
     }
 }
