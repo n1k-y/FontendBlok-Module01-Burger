@@ -676,6 +676,7 @@ a {
     .banner-wrapper {
         padding: 100px  40px;
         background-position: 18%;
+        background-image: url(../images/banner-moblie.webp);
     }
     .menu {
         margin-top: 84px;
