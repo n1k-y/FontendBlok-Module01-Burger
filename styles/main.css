@@ -123,7 +123,7 @@ a {
 /* Hero */
 
 .hero {
-    background-image: url(../images/hero.jpg);
+    background-image: url(../images/hero.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -188,7 +188,7 @@ a {
 
 .banner-wrapper {
     padding: 99px 101px;
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/banner.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -495,7 +495,7 @@ a {
 /* Contacts */
 
 .hero-contact {
-    background-image: url(../images/hero-contact.jpg);
+    background-image: url(../images/hero-contact.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -783,7 +783,7 @@ a {
     }
     .hero {
         padding: 57px 0;
-        background-image: url(../images/hero-mobile.jpg);
+        background-image: url(../images/hero-mobile.webp);
     }
     .banner {
         margin-top: 34px;
