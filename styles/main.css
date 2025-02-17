@@ -906,10 +906,6 @@ a {
         height: 40vw;
     }
     .banner-wrapper {
-        display: block;
-        height: 330px;
-        max-width: 450px;
-        width: 100%;
-        box-sizing: border-box;
+        max-width: 100%;
     }
 }
