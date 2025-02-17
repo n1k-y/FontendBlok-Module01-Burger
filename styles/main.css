@@ -907,5 +907,6 @@ a {
     }
     .banner-wrapper {
         background-image: url(../images/banner-mobile.webp);
+        height: 262px;
     }
 }
