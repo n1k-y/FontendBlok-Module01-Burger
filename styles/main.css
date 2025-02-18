@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@font-face {
+    font-family: "Open Sans";  
+    src: url("../fonts/OpenSans.ttf") format("truetype"); 
+    font-style: normal;
+     }
+     
+    @font-face {
+    font-family: "Nunito Sans";
+    src: url("../fonts/NunitoSans.ttf") format("truetype");
+    font-style: normal; 
+    }
+
 :root {
     --open-sans: "Open Sans", serif;
     --nunito-sans: "Nunito Sans", serif;
@@ -401,7 +412,7 @@ a {
 
 .footer {
     background-color: #1E2F40;
-    margin-top: 120px;
+    margin-top: 119px;
 }
 
 .footer-wrapper {
@@ -409,8 +420,18 @@ a {
     justify-content: space-between;
     font-family: var(--nunito-sans);
     color: rgba(var(--light-rbg), .9);
-    padding: 115px 0 100px 0;
+    padding: 114px 0 100px 0;
     gap: 15px;
+}
+
+.footer-logo {
+    display: block;
+    width: 63px;
+    height: 56px;
+    background-image: url(../images/logo-light-min.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 3px;
 }
 
 .footer-title {
@@ -419,7 +440,7 @@ a {
     line-height: 190%;
     text-transform: uppercase;
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
 }
 
 .footer-nav {
@@ -461,15 +482,6 @@ a {
     color: var(--accent-light);
 }
 
-.footer-logo {
-    display: block;
-    width: 63px;
-    height: 56px;
-    background-image: url(../images/logo-light-min.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .footer-tel {
     display: block;
     color: var(--accent-light);
@@ -491,6 +503,11 @@ a {
 
 .footer-item:last-child {
     flex-basis: 196px;
+    margin-right: 5px;
+    margin-left: -15px;
+}
+.footer-item:nth-child(3) {
+    margin-left: 25px;
 }
 
 /* Contacts */
@@ -710,6 +727,9 @@ a {
     .footer {
         margin-top: 140px;
     }
+    .footer-title {
+        padding-bottom: 11px;
+    }
     .footer-item:nth-child(3) {
         margin-left: 23px;
     }
@@ -888,7 +908,8 @@ a {
         top: 90px;
     }
     .footer-logo {
-        margin-bottom: 22px;
+        margin-bottom: 21px;
+        margin-top: 0;
     }
     .footer-title {
         font-size: 18px;
