@@ -681,7 +681,6 @@ a {
     .header-wrapper {
         gap: 45px;
         padding: 30px 0;
-        background-image: url(../images/banner768.webp);
     }
     .nav {
         gap: 23px;
@@ -696,6 +695,7 @@ a {
     .banner-wrapper {
         padding: 100px  40px;
         background-position: 18%;
+        background-image: url(../images/banner768.webp);
     }
     .menu {
         margin-top: 84px;
