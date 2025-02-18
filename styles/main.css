@@ -203,6 +203,10 @@ a {
     margin: 0 0 11px 0;
 }
 
+.banner-title.mobile {
+    display: none;
+}
+
 .banner-title span {
     display: block;
     text-align: center;
@@ -934,5 +938,17 @@ a {
         position: absolute;
         bottom: 34px;
         left: 32px;
+    }
+    .banner-title {
+        display: none;
+    }
+    .banner-title.mobile {
+        display: block;
+        position: absolute;
+        top: 34px;
+        left: 32px;
+    }
+    .banner-description {
+        margin-top: 117px;
     }
 }
