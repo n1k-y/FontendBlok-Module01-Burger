@@ -695,7 +695,6 @@ a {
     .banner-wrapper {
         padding: 100px  40px;
         background-position: 18%;
-        background-image: url(../images/banner768.webp);
     }
     .menu {
         margin-top: 84px;
@@ -929,11 +928,7 @@ a {
         flex-basis: calc(100% - 130px - 20px);
         height: 40vw;
     }
-}
-@media (max-width: 360px) {
     .banner-wrapper {
         background-image: url(../images/banner-mobile.webp);
-        width: 90%;
-        height: 263px;
     }
 }
