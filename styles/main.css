@@ -798,6 +798,7 @@ a {
     }
     .banner-wrapper {
         padding: 33px 16px;
+        background-position: 0;
     }
     .banner-description {
         font-size: 14px;
