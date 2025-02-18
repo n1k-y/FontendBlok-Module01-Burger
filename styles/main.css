@@ -203,6 +203,10 @@ a {
     margin: 0 0 11px 0;
 }
 
+.banner-title.mobile {
+    display: none;
+}
+
 .banner-title span {
     display: block;
     text-align: center;
@@ -248,6 +252,9 @@ a {
     color: var(--dark);
     padding: 20px 0;
     transition: var(--tr);
+}
+.banner-btn.mobile {
+    display: none;
 }
 
 .banner-btn:hover {
@@ -937,7 +944,21 @@ a {
         bottom: 94px;
     }
     .banner-btn {
+        display: none;
+    }
+    .banner-btn.mobile {
         position: absolute;
+        display: block;
+        left: 32px;
         bottom: 34px;
+    }
+    .banner-title {
+        display: none;
+    }
+    .banner-title.mobile {
+        position: absolute;
+        display: block;
+        left: 30px;
+        top: 34px;
     }
 }
