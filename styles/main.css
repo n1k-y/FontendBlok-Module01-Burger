@@ -909,5 +909,7 @@ a {
 @media (max-width: 360px) {
     .banner-wrapper {
         background-image: url(../images/banner-mobile.webp);
+        width: 90%;
+        height: 263px;
     }
 }
